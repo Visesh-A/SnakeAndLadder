@@ -27,13 +27,16 @@ namespace SnakeAndLader
                         int dieRoll = DieRoll();
                         if (this.PlayerPosition - dieRoll > 0)
                             this.PlayerPosition -= dieRoll;
-                        if (this.PlayerPosition < 0)
+                        else
                             this.PlayerPosition = 0;
                         break;
                 }
                 Console.WriteLine("Player position  " + PlayerPosition);
             }
-            Console.WriteLine("Player position  " + PlayerPosition);
+            if (this.PlayerPosition == WINNING_POSITION)
+            {
+                Console.WriteLine("Player position  " + PlayerPosition);
+            }
         }
     }
 }
