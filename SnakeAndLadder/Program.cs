@@ -1,11 +1,8 @@
 ﻿using System;
 namespace SnakeAndLader
 {
-    class Program
+    public class Play
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome to Snake and Ladder Game");
-        }
+        int PlayerPosition = 0;
     }
 }
